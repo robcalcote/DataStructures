@@ -14,6 +14,9 @@ namespace DataStructures.Controllers
         // GET: Stack
         public ActionResult Index()
         {
+            // myStack currently has nothing, so it's instantiating ViewBag.MyStack
+            ViewBag.MyStack = myStack;
+
             return View();
         }
 
