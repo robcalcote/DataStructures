@@ -8,10 +8,23 @@ namespace DataStructures.Controllers
 {
     public class StackController : Controller
     {
+        // create static stack structure
+        static Stack<string> myStack = new Stack<string>();
+
         // GET: Stack
         public ActionResult Index()
         {
             return View();
+        }
+
+        // AddOne Method, will add "New Entry + 'n'" to the stack, and store it in the ViewBag.MyStack
+        public ActionResult AddOne()
+        {
+            myStack.Push("New Entry " + (myStack.Count + 1));
+
+            ViewBag.MyStack = myStack;
+
+            return View("Index");
         }
     }
 }
