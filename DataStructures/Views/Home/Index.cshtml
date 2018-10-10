@@ -15,18 +15,22 @@
     <div>
         <!-- The four List Items below are for the navigation to the various views. the last one will exit if clicked -->
         <ul>
+            <!-- If STACK is clicked, it will find the Stack controller and Index method inside controller -->
             <li>
                 <a href="@Url.Action("Index", "Stack")"
                    class="w3-bar-item w3-button">Stack</a>
             </li>
+            <!-- If QEUEUE is clicked, it will find the Queue controller and Index method inside controller -->
             <li>
                 <a href="@Url.Action("Index", "Queue")"
                    class="w3-bar-item w3-button">Queue</a>
             </li>
+            <!-- If DICTIONARY is clicked, it will find the Dictionary controller and Index method inside controller -->
             <li>
                 <a href="@Url.Action("Index", "Dictionary")"
                    class="w3-bar-item w3-button">Dictionary</a>
             </li>
+            <!-- If EXIT is clicked, it will find the Home controller and Exit method inside controller -->
             <li>
                 <a href="@Url.Action("Exit", "Home")"
                    class="w3-bar-item w3-button">Exit</a>
